@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="동기부여를 받으며 타이머를 진행할 수 있는 강력한 타이머입니다." />
+    <meta name="keyword" content="동기부여, 타이머, 공부, 열정, 목표, 집중" />
+    <title>동기부여 타이머</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" /> -->
+</head>
+
+<body>
+    <header id="header" role="banner">
+        <div class="header__inner">
+            <div class="header__logo">
+                <h1>
+                    <a href="#">motive<em>timer</em></a>
+                </h1>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="">timer</a></li>
+                    <li><a href="">stop watch</a></li>
+                    <li>언어</li>
+                </ul>
+            </nav>
+            <!-- 웹 표준 처리. aria-controls, aria-expanded, role -->
+            <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false"
+                role="button" tabindex="0">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main id="main" role="main">
+        <div class="motive__area">
+            <div class="motive__text"></div>
+            <div class="buttons">
+                <button id="today_motive">오늘의 동기부여</button>
+                <button id="self_modify">직접 작성하기</button>
+            </div>
+        </div>
+        <div class="timer__area">
+            <div class="timer__container">
+                <div id="timer">00:00:00</div>
+            </div>
+            <div class="buttons">
+                <button id="startTimer">시작</button>
+                <button id="stopTimer">정지</button>
+                <button id="resetTimer">리셋</button>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

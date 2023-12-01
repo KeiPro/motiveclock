@@ -1,4 +1,15 @@
-body {
+@charset "UTF-8";
+
+/* setting */
+@import url(setting/fonts.css);
+@import url(setting/vars.css);
+@import url(setting/reset.css);
+
+@import url(setting/header.css);
+@import url(setting/footer.css);
+@import url(section/contact.css);
+
+/* body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -9,7 +20,7 @@ body {
     align-items: center;
     height: 100vh;
     box-sizing: border-box;
-}
+} */
 
 .timer-container {
     background-color: #fff;
@@ -31,7 +42,8 @@ body {
 }
 
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -51,7 +63,8 @@ button:hover {
 
 /* 추가적인 버튼 스타일링 */
 #startTimer {
-    background-color: #008CBA; /* Blue */
+    background-color: #008CBA;
+    /* Blue */
 }
 
 #startTimer:hover {
@@ -59,7 +72,8 @@ button:hover {
 }
 
 #stopTimer {
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
+    /* Red */
 }
 
 #stopTimer:hover {
@@ -67,7 +81,8 @@ button:hover {
 }
 
 #resetTimer {
-    background-color: #555555; /* Dark grey */
+    background-color: #555555;
+    /* Dark grey */
 }
 
 #resetTimer:hover {
