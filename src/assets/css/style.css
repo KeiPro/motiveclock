@@ -5,8 +5,8 @@
 @import url(setting/vars.css);
 @import url(setting/reset.css);
 
-@import url(setting/header.css);
-@import url(setting/footer.css);
+@import url(section/header.css);
+@import url(section/footer.css);
 @import url(section/contact.css);
 
 /* body {

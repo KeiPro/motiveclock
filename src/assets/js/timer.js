@@ -1,9 +1,11 @@
 let timerInterval;
 let seconds = 0;
 
-document.getElementById('startTimer').addEventListener('click', startTimer);
-document.getElementById('stopTimer').addEventListener('click', stopTimer);
-document.getElementById('resetTimer').addEventListener('click', resetTimer);
+export function initTimerEvents() {
+    document.getElementById('startTimer').addEventListener('click', startTimer);
+    document.getElementById('stopTimer').addEventListener('click', stopTimer);
+    document.getElementById('resetTimer').addEventListener('click', resetTimer);
+}
 
 function startTimer() {
     if (timerInterval) return;
