@@ -1,16 +1,27 @@
 #motive{
     height:100vh;
-    
 }
 
 .motive__area{
+    position: relative;
     width: 70%;
     margin: 6rem auto 0; /* 좌우 마진 자동으로 설정하여 가운데 정렬 */
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/* 기존 스타일에 추가 */
+#increase_size, #decrease_size {
+    position: absolute;
+    top:8px;
+    width: 20px;
+    height:20px;
+}
+
+#decrease_size{
+    right:32px;
+}
+
+#increase_size{
+    right: 8px;
 }
 
 .motive__text{
@@ -38,19 +49,42 @@
 }
 
 .motive__area .buttons {
-    margin-top:1vh;
+    margin-top:1.5vh;
+
+    display: flex;
+    justify-content: center;
 }
 
 #today_motive{
-    width : 150px;
+    width : 30%;
     height : 50px;
 
-    margin-right : 5px;
+    margin-right : 3%;
 }
 
 #self_modify{
-    width : 150px;
+    width : 30%;
     height : 50px;
+}
 
-    margin-left : 5px;
+@media (max-width: 800px){
+    .motive__area{
+        position: relative;
+        width: 90%;
+        margin: 6rem auto 0; /* 좌우 마진 자동으로 설정하여 가운데 정렬 */
+    }
+
+    #today_motive{
+        font-size: 2vw;
+        width : 30%;
+        height : 50px;
+    
+        margin-right : 3%;
+    }
+
+    #self_modify{
+        font-size: 2vw;
+        width : 30%;
+        height : 50px;
+    }
 }
