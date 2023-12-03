@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="동기부여를 받으며 타이머를 진행할 수 있는 강력한 타이머입니다." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="동기부여를 받으며 타이머를 진행할 수 있는 강력한 타이머입니다."
+    />
     <meta name="keyword" content="동기부여, 타이머, 공부, 열정, 목표, 집중" />
     <title>동기부여 타이머</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" /> -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#intro">소개 영역 바로가기</a>
+        <a href="#skill">스킬 영역 바로가기</a>
+        <a href="#site">사이트 영역 바로가기</a>
+        <a href="#port">포트폴리오 영역 바로가기</a>
+        <a href="#contact">연락처 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+
+    <!-- header -->
     <header id="header" role="banner">
-        <div class="header__inner">
-            <div class="header__logo">
-                <h1>
-                    <a href="#">motive<em>timer</em></a>
-                </h1>
-            </div>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="">timer</a></li>
-                    <li><a href="">stop watch</a></li>
-                    <li>언어</li>
-                </ul>
-            </nav>
-            <!-- 웹 표준 처리. aria-controls, aria-expanded, role -->
-            <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false"
-                role="button" tabindex="0">
-                <span></span>
-            </div>
+      <div class="header__inner">
+        <div class="header__logo">
+          <h1>
+            <a href="#">motive<em>timer</em></a>
+          </h1>
         </div>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="">timer</a></li>
+            <li><a href="">stop watch</a></li>
+            <li>언어</li>
+          </ul>
+        </nav>
+        <!-- 웹 표준 처리. aria-controls, aria-expanded, role -->
+        <div
+          class="header__nav__mobile"
+          id="headerToggle"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <span></span>
+        </div>
+      </div>
     </header>
+
+    <!-- main -->
     <main id="main" role="main">
-        <div class="motive__area">
-            <div class="motive__text"></div>
+
+      <!-- motive -->
+      <section id="motive">
+         <div class="motive__area">
+            <div class="motive__text">고통없는 성공은 없다. 그저 전진하라.</div>
             <div class="buttons">
                 <button id="today_motive">오늘의 동기부여</button>
                 <button id="self_modify">직접 작성하기</button>
             </div>
-        </div>
+         </div>
+      </section>
+
+      <!-- timer -->
+      <section id="timer">
         <div class="timer__area">
             <div class="timer__container">
                 <div id="timer">00:00:00</div>
-            </div>
-            <div class="buttons">
-                <button id="startTimer">시작</button>
-                <button id="stopTimer">정지</button>
-                <button id="resetTimer">리셋</button>
+                <div class="buttons">
+                    <button id="startTimer">시작</button>
+                    <button id="stopTimer">정지</button>
+                    <button id="resetTimer">리셋</button>
+                </div>
             </div>
         </div>
+     </section>
     </main>
-    <footer id="footer" role="contentinfo">
-        footer
-    </footer>
-    <!-- //footer -->
-    <script type="module" src="assets/js/main.js"></script>
-</body>
 
+    <!-- //footer -->
+    <footer id="footer" role="contentinfo">footer</footer>
+    
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>
