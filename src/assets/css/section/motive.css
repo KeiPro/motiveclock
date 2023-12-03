@@ -36,3 +36,21 @@
      /* 박스 그림자 */
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.motive__area .buttons {
+    margin-top:1vh;
+}
+
+#today_motive{
+    width : 150px;
+    height : 50px;
+
+    margin-right : 5px;
+}
+
+#self_modify{
+    width : 150px;
+    height : 50px;
+
+    margin-left : 5px;
+}
