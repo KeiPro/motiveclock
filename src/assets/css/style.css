@@ -9,35 +9,4 @@
 @import url(section/motive.css);
 @import url(section/footer.css);
 @import url(section/contact.css);
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* 추가적인 버튼 스타일링 */
-#startTimer {
-    background-color: #008CBA;
-    /* Blue */
-}
-
-#startTimer:hover {
-    background-color: #005f73;
-}
-
-#stopTimer {
-    background-color: #f44336;
-    /* Red */
-}
-
-#stopTimer:hover {
-    background-color: #da190b;
-}
-
-#resetTimer {
-    background-color: #555555;
-    /* Dark grey */
-}
-
-#resetTimer:hover {
-    background-color: #333333;
-}
+@import url(section/timer.css);

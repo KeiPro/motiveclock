@@ -20,7 +20,7 @@ function stopTimer() {
 function resetTimer() {
     stopTimer();
     seconds = 0;
-    document.getElementById('timer').textContent = '00:00:00';
+    document.getElementById('timer__text').textContent = '00:00:00';
 }
 
 function updateTimer() {
@@ -28,7 +28,7 @@ function updateTimer() {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
-    document.getElementById('timer').textContent = 
+    document.querySelector(".timer__text").textContent = 
         `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 }
 

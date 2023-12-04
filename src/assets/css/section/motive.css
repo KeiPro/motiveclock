@@ -1,8 +1,8 @@
 #motive{
-    height:100vh;
+    height:40vh;
 }
 
-.motive__area{
+.motive__inner{
     position: relative;
     width: 70%;
     margin: 6rem auto 0; /* 좌우 마진 자동으로 설정하여 가운데 정렬 */
@@ -48,7 +48,7 @@
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.motive__area .buttons {
+.motive__inner .buttons {
     margin-top:1.5vh;
 
     display: flex;
@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 800px){
-    .motive__area{
+    .motive__inner{
         position: relative;
         width: 90%;
         margin: 6rem auto 0; /* 좌우 마진 자동으로 설정하여 가운데 정렬 */
