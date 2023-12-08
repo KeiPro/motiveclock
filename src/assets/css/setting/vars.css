@@ -41,6 +41,11 @@
 }
 
 body {
-    color: var(--black100);
-    background-color: var(--mainBg-color);
-}
+    align-items: center;
+    background: radial-gradient(ellipse at center,
+      #a2d2ff00 0%, 
+      #a2d3f800 43%, 
+      #a2d4ee88 100%);
+    background-repeat: no-repeat;
+    transition: background-color .2s;
+  }
